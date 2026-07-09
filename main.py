@@ -18,7 +18,7 @@ PLACEHOLDER = "[NAME]"
 #       Done...
 
 # 2. Check if today matches a birthday in the birthdays.csv
-birthdays_df = pandas.read_csv("birthday.csv")
+birthdays_df = pandas.read_csv("birthdays.csv")
 for (index, row) in birthdays_df.iterrows():
     entity_name = row.entity_name.strip()
     if current_month == row.month and today_date == row.day:
