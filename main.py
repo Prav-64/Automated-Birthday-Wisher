@@ -25,7 +25,7 @@ for (index, row) in birthdays_df.iterrows():
         # 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's
         #    actual name from birthdays.csv
         template_letter_number = randint(1,6)
-        with open(f"../Automated Birthday Wisher/letter_templates/letter_{template_letter_number}.txt") as temp_letter:
+        with open(f"letter_templates/letter_{template_letter_number}.txt") as temp_letter:
             letter_to_send = temp_letter.read()
             letter_to_send = letter_to_send.replace(PLACEHOLDER, entity_name)
 
